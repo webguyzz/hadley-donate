@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+   <head>
+    <title>Support Hadley</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+      <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+          <meta charset="utf-8">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+      <link rel="stylesheet" href="css/bootstrap-accessibility.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/bootstrap-float-label/v3.0.1/dist/bootstrap-float-label.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="js/bootstrap-accessibility-plugin.js"></script>
+      <script src="js/jquery-accessible-tabs.js"></script>
+      <script src="js/jquery-accessible-hide-show-aria.js"></script>        
+	  <script src="js/jquery-accessible-modal-window-aria.js"></script>
+      
+   <link rel="stylesheet" href="ableplayer/ableplayer.css">
+   <script src="ableplayer/thirdparty/modernizr.custom.js"></script>
+      <script src="ableplayer/thirdparty/js.cookie.js"></script>
+      <script src="ableplayer/build/ableplayer.js"></script> 
+      
+
+
+
+
+      
+	  <style>	
+            .audience_wrap [role="tablist"].js-tablist {
+            padding-left:0px;
+            padding-right:0px;	
+            border-bottom:none;
+            }
+            [role="tablist"] .js-tablist__item #audience_link_one{
+            list-style-type:none;
+            }
+            #id_one, #id_two, #id_three{
+            padding-right:0px;
+            padding-left:0px;	
+            margin-left:0px;
+            margin-right:0px;
+            }
+            /*to display the hoffman pop up box*/
+            .tooltip{
+            opacity: 100;
+            }
+		</style>	
+	
+			
+         
+   </head>
+   <body>
+      <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+      <nav class="navbar navbar-custom navbar navbar-fixed-top" aria-label="main">
+         <div class="container-fluid">
+            <!--for fading transition-->
+            <div class="bg transition"></div>
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="img/hadleylogo.png" alt="Hadley logo" id="logo"><img src="img/mobile_hadleylogo.png" alt="Hadley logo" id="mobile_logo"></a>
+             <button class="custom_mobile" aria-pressed="false">DONATE</button>   
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false"><span class="accessibility_label">Toggle Menu</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>	
+               
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav">
+                  <li class=" active dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Why Give<span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">Support Hadley</a></li>
+                        <li><a href="#">Memorial Tribute</a></li>
+                        <li><a href="#">Workplace Giving</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Ways To Give<span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">Make A Gift Now</a></li>
+                        <li><a href="#">One Time Contribution</a></li>
+                        <li><a href="#">Monthly Giving</a></li>
+                     </ul>
+                  </li>
+                  <li class=" active dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Make a Difference<span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">Make A Gift Now</a></li>
+                        <li><a href="#">One Time Contribution</a></li>
+                        <li><a href="#">Gift of Securities</a></li>
+                        <li><a href="#">Workplace Giving</a></li>
+                        <li><a href="#">Corporate And Foundation Gifts</a></li>
+                        <li><a href="#">Planned Gifts/Bequest</a></li>
+                     </ul>
+                  </li>
+                  <!--<li><a class="donate_navi" href="#">DONATE</a></li>-->
+                  <li><button class="navbar-btn custom" aria-pressed="false">DONATE</button></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div id="content" tabindex="-1" role="main">
+         <h1 class="hidden">Support Hadley</h1>
+         <div class="banner_container">
+            <div class="title">
+               You can help people <font>thrive</font> 
+            </div>
+            <div class="title_second">Make a gift today.</div>
+            <div class="donate_landing_btn"><a href="#" class="button_link">DONATE</a></div>
+            <img src="img/braille_letters.png" alt="donate in braille" id="braille_title">
+         </div>
+         <div class="banner">
+         </div>
+         <script>
+            /*fading the background image to a low opacity
+            $('.banner').fadeTo('slow', 0.3, function()
+            {
+            	  $(this).css('background-image', 'url(' + $img + ')');
+            }).fadeTo('slow', 30); */
+            
+            	$(document).ready(function(){
+            	$('.banner').fadeTo(1000, 0.1);
+            	});
+            
+            $(document).ready(function(){
+            	$('.navbar-nav').hide().fadeIn(1000);
+            });
+         </script>
+         <script>
+            $(document).ready(function(){
+            
+            	$(".title").animate({paddingTop:"0px"
+            	},{
+            		duration: 1100,	
+            	});
+            
+            });
+         </script>
+         <div class="wrap_testimony">
+            <div class="testimony">
+               <h2 id="thrive">Everyone wants to thrive <br><span class="subtext">at home, at work and in their community.</span></h2>
+            </div>
+         </div>
+         <div class="wrap_speakers">
+            <div class="container">
+               <div class="row">
+                  <div class="testimony_video">
+                     <div class="border col-md-4">
+                     
+                         <button class="js-modal button"
+                     data-modal-prefix-class="simple-animated"
+                     data-modal-content-id="modal_id_2nd_example"
+                     data-modal-title=""
+                     data-modal-close-text="Close it"
+                     data-modal-close-title="Close it, really">
+                           <img src="img/speaker_one.jpg" alt="testimony video" class="testimony_image">
+                           <h3 class="subtext"><b>Susan Brasel:</b></h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    	 </button>
+                             <div id="modal_id_1st_example" class="hidden"><video id="vid_Turning_On_&_Off_VoiceOver" preload="auto" width="840" height="580" data-able-player data-show-now-playing="false" data-use-transcript-button="true" data-include-transcript="true" onplaying="ga('send', 'event', 'Ableplayer-Instructional-Videos', 'Started video', 'Turning On & Off VoiceOver', undefined, {'nonInteraction': 1});" onpause="ga('send', 'event', 'Ableplayer-Instructional-Videos', 'Video Paused', 'Turning On & Off VoiceOver', undefined, {'nonInteraction': 1});" onended="ga('send', 'event', 'Ableplayer-Instructional-Videos', 'Video Completed', 'Turning On & Off VoiceOver', undefined, {'nonInteraction': 1});"><source type="video/mp4" src="http://hwcdn.net/k4w2w6y8/cds/iFocus_Hadley/Turning_On_and_Off_VoiceOver.mp4"/></video></div>
+                      </div>
+                  </div>
+
+
+
+                  <div class="testimony_video">
+                     <div class="border col-md-4">
+                     
+                      <button class="js-modal button"
+                     data-modal-prefix-class="simple-animated"
+                     data-modal-content-id="modal_id_2nd_example"
+                     data-modal-title=""
+                     data-modal-close-text="Close it"
+                     data-modal-close-title="Close it, really">
+                       <img src="img/speaker_two.jpg" alt="testimony video" class="testimony_image">
+                        <h3 class="subtext"><b>Jill Lenihan:</b></h3>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </button>
+                         <div id="modal_id_2nd_example" class="hidden"><video id="video_Turning_On_&_Off_VoiceOver" preload="auto" width="840" height="580" data-able-player data-show-now-playing="false" data-use-transcript-button="true" data-include-transcript="true" onplaying="ga('send', 'event', 'Ableplayer-Instructional-Videos', 'Started video', 'Turning On & Off VoiceOver', undefined, {'nonInteraction': 1});" onpause="ga('send', 'event', 'Ableplayer-Instructional-Videos', 'Video Paused', 'Turning On & Off VoiceOver', undefined, {'nonInteraction': 1});" onended="ga('send', 'event', 'Ableplayer-Instructional-Videos', 'Video Completed', 'Turning On & Off VoiceOver', undefined, {'nonInteraction': 1});"><source type="video/mp4" src="http://hwcdn.net/k4w2w6y8/cds/iFocus_Hadley/Turning_On_and_Off_VoiceOver.mp4"/></video></div>
+                   	
+                          
+                     </div>
+                  </div>
+                  
+                  
+                  
+                  <div class="testimony_video">
+                     <div class="border col-md-4">
+                      	<button class="js-modal button"
+                     data-modal-prefix-class="simple-animated"
+                     data-modal-content-id="modal_id_2nd_example"
+                     data-modal-title=""
+                     data-modal-close-text="Close it"
+                     data-modal-close-title="Close it, really">
+                           <img src="img/speaker_three.jpg" alt="testimony video" class="testimony_image">
+                           <h3 class="subtext"><b>Michelle Albrecht:</b></h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						</button>
+                        
+                        <div id="modal_id_3rd_example" class="hidden"><video id="film_Turning_On_&_Off_VoiceOver" preload="auto" width="840" height="580" data-able-player data-show-now-playing="false" data-use-transcript-button="true" data-include-transcript="true" onplaying="ga('send', 'event', 'Ableplayer-Instructional-Videos', 'Started video', 'Turning On & Off VoiceOver', undefined, {'nonInteraction': 1});" onpause="ga('send', 'event', 'Ableplayer-Instructional-Videos', 'Video Paused', 'Turning On & Off VoiceOver', undefined, {'nonInteraction': 1});" onended="ga('send', 'event', 'Ableplayer-Instructional-Videos', 'Video Completed', 'Turning On & Off VoiceOver', undefined, {'nonInteraction': 1});"><source type="video/mp4" src="http://hwcdn.net/k4w2w6y8/cds/iFocus_Hadley/Turning_On_and_Off_VoiceOver.mp4"/></video></div>
+                     </div>
+                  </div>
+                  
+               </div>
+               <div id="button_testimony">
+                  <a href="#" class="button_link">DONATE</a>
+               </div>
+            </div>
+         </div>
+         <!----------------------------added------------------------------->
+         <div id="desktop_audience">
+            <div class="js-tabs">
+               <div class="container">
+                  <div class="row" id="row_close">
+                     <div class="audience_wrap">
+                        <h2 class="serve">Who We Serve</h2>
+                        <ul class="js-tablist" data-existing-hx="h2">
+                       
+                              <li class="js-tablist__item">    <div class="border col-md-4">
+                                 <a href="#id_one" id="audience_link_one" class="js-tablist__link">
+                                    <h3>People with Vision Loss</h3>
+                                 </a>
+                              </div> </li>
+                          
+                           
+                              <li class="js-tablist__item"><div class="border col-md-4">
+                                 <a href="#id_two" id="audience_link_two" class="js-tablist__link">
+                                    <h3>Families</h3>
+                                 </a>
+                               </div>  </li>
+                        
+                          
+                              <li class="js-tablist__item"> <div class="border col-md-4">
+                                 <a href="#id_three" id="audience_link_three" class="js-tablist__link">
+                                    <h3>Professionals</h3>
+                                 </a>
+                              </div> </li>
+                          
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div id="id_one" class="js-tabcontent">
+                  <div class="vision_wrap">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-4 col-md-offset-4">
+                              <div class="mini_content" id="content_vision">
+                                 <div class="blue_title">People with Vision Loss</div>
+                                 <p>Since 1920 Hadley has helped adults with visual impairment learn what they want to learn in the way they want to learn it. Ranging from braille and academic studies to independent living, technology, business and employment skills and recreation, our learning opportunities have it covered.</p>
+                                 <br>
+                                 <a href="#" class="donate_link">DONATE</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="id_two" class="js-tabcontent">
+                  <div class="families_wrap">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col">
+                              <div class="mini_content" id="content_families">
+                                 <div class="navyblue_title">Families</div>
+                                 <p>Professionals receive individualized training designed to help them serve their clients more effectively. Learning with Hadley is convenient - 
+                                    at home or at the office, 	around a busy schedule.
+                                 </p>
+                                 <br>
+                                 <a href="#" class="donate_link">DONATE</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="id_three" class="js-tabcontent">
+                  <div class="professionals_wrap">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-4 col-md-offset-4">
+                              <div class="mini_content">
+                                 <div class="red_title">Professionals</div>
+                                 <p>Professionals receive individualized training designed to help them serve their clients more effectively. Learning with Hadley is convenient - 
+                                    at home or at the office, 	around a busy schedule.
+                                 </p>
+                                 <br>
+                                 <a href="#" class="donate_link">DONATE</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="audience_wrap_mobile">
+            <h2 class="serve">Who We Serve</h2>
+            <h2 class="js-expandmore" id="vision_loss">People with Vision Loss</h2>
+            <div class="js-to_expand">
+               <div class="vision_wrap_mobile">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                           <div class="mini_content">
+                              <div class="blue_title">People with Vision Loss</div>
+                              <p>Professionals receive individualized training designed to help them serve their clients more effectively. Learning with Hadley is convenient - at home or at the office, around a busy schedule.</p>
+                              <a href="#" class="donate_link_mobile">DONATE</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <h2 class="js-expandmore" id="families">Families</h2>
+            <div class="js-to_expand">
+               <div class="families_wrap_mobile">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                           <div class="mini_content">
+                              <div class="navyblue_title">Families</div>
+                              <p>Professionals receive individualized training designed to help them serve their clients more effectively. Learning with Hadley is convenient - at home or at the office, around a busy schedule.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <h2 class="js-expandmore" id="professionals">Professionals</h2>
+            <div class="js-to_expand">
+               <div class="professionals_wrap_mobile">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                           <div class="mini_content">
+                              <div class="red_title">Professionals</div>
+                              <p>Professionals receive individualized training designed to help them serve their clients more effectively. Learning with Hadley is convenient - at home or at the office, around a busy schedule.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="quote">
+            <p>For nearly 100 years Hadley has empowered those with visual impairment thrive by providing tuition free, personalized learning opportunities.</p>
+         </div>
+         <div class="container">
+            <h2 class="hidden">Donate</h2>
+            <div class="js-tabs">
+               <ul class="js-tablist" data-existing-hx="h2" id="js_amount_tab">
+                  <li class="js-tablist__item">
+                     <a href="#id_first" id="label_id_first" class="js-tablist__link">
+                        <h3>One Time Gift</h3>
+                     </a>
+                  </li>
+                  <li class="js-tablist__item">
+                     <a href="#id_second" id="label_id_second" class="js-tablist__link">
+                        <h3>Monthly</h3>
+                     </a>
+                  </li>
+               </ul>
+               <h2 class="hidden">Make a gift</h2>
+               <div id="id_first" class="js-tabcontent">
+                  <!--<h2>Donation Amount</h2>-->
+                  <div class="row">
+                     <p class="donation_info">* Donation Amount (US Dollars)</p>
+                     <table id="donation_list" role="presentation">
+                        <tr>
+                           <th><button class="toggle amount_one" aria-pressed="false">$1,000</button></th>
+                           <th><button class="toggle amount_two" aria-pressed="false">$500</button></th>
+                           <th><button class="toggle amount_three" aria-pressed="false">$250</button></th>
+                           <th><button class="toggle amount_four" aria-pressed="false">$100</button></th>
+                           <th><button class="toggle amount_five" aria-pressed="false">$50</button></th>
+                        </tr>
+                     </table>
+                     <div class="col-sm-8">
+                        <div class="selectdiv" id="mobile_select">
+                           <label>
+                              <select class="form-control" id="donation_list_select">
+                                 <option value="1000">$1,000</option>
+                                 <option value="500">$500</option>
+                                 <option value="250">$250</option>
+                                 <option value="100">$100</option>
+                                 <option value="50">$50</option>
+                              </select>
+                           </label>
+                        </div>
+                     </div>
+                     <table id="other_amount">
+                        <tr>
+                           <th>
+                              <p class="dollar_sign">$</p>
+                           </th>
+                           <th>
+                              <form>
+                                 <fieldset id="fieldset_donation">
+                                    <input type="text" name="total" id="total" />
+                                    <label for="total">Other Amount</label>
+                                 </fieldset>
+                              </form>
+                           </th>
+                        </tr>
+                     </table>
+                     <div class="check_wrap">
+                        <label class="check_container"><span class="hidden">CellDot 1</span><input type="checkbox" id="test1"><span aria-hidden="true">&nbsp;</span></label> 
+                        <p class="check_statement">I would like to add 4.5% of my contribution to my credit card charge to cover service, processing fees, and other expenses to ensure Hadley’s programs receive all of my contribution.</p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-sm-8">
+                        <p class="selection_statement">I would like my gift to go to the following program or initiative: (Pick One)</p>
+                        <div class="selectdiv">
+                           <label>
+                              <select class="form-control">
+                                 <option value="one">Highest Priority</option>
+                                 <option value="two">Two</option>
+                                 <option value="three">Three</option>
+                                 <option value="four">Four</option>
+                              </select>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="col-sm-4">
+                        <a href="#" class="button_link" id="continue_link">CONTINUE</a>
+                     </div>
+                  </div>
+               </div>
+               <div id="id_second" class="js-tabcontent">
+                  <h2>Monthly Donation</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod lorem sem, quis commodo massa pulvinar ut. Sed nunc justo, elementum et dolor nec, scelerisque viverra lacus. Aliquam blandit vehicula eros, ut mattis risus lobortis nec. Nullam finibus eu ipsum posuere scelerisque. Donec tempor ut mauris porttitor fermentum. Morbi nec elit rhoncus, pharetra nulla quis, elementum leo. Curabitur quis est mollis ipsum feugiat condimentum eget ac leo. In accumsan tempor diam, ut elementum lacus tristique sit amet. Sed risus dolor, ornare vel efficitur pharetra, rutrum in justo. In hac habitasse platea dictumst. Proin libero mi, bibendum at ligula sed, porta convallis diam. Duis nisl ex, porttitor sed lectus ac, laoreet commodo orci. In sodales lorem a urna venenatis, eu iaculis sem laoreet. Vestibulum vitae vehicula est. Sed at odio in neque facilisis auctor et ac sem. Sed sodales vel turpis et maximus.</p>
+               </div>
+            </div>
+         </div>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+<!---   
+<video id="video_Turning_On_&_Off_VoiceOver" preload="auto" width="640" height="380" data-able-player data-show-now-playing="false" data-use-transcript-button="true" data-include-transcript="true" onplaying="ga('send', 'event', 'Ableplayer-Instructional-Videos', 'Started video', 'Turning On & Off VoiceOver', undefined, {'nonInteraction': 1});" onpause="ga('send', 'event', 'Ableplayer-Instructional-Videos', 'Video Paused', 'Turning On & Off VoiceOver', undefined, {'nonInteraction': 1});" onended="ga('send', 'event', 'Ableplayer-Instructional-Videos', 'Video Completed', 'Turning On & Off VoiceOver', undefined, {'nonInteraction': 1});"><source type="video/mp4" src="http://hwcdn.net/k4w2w6y8/cds/iFocus_Hadley/Turning_On_and_Off_VoiceOver.mp4"/></video>
+-->
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         <footer>
+            <div class="subscription_wrap">
+               <div class="container">
+                  <div class="row">
+                     <div class="border col-md-6">
+                        <div class="sub_message">
+                           <p>Stay connected to hear more stories of lives changed through Hadley.</p>
+                        </div>
+                     </div>
+                     <div class="border col-md-6">
+                        <!------Float Label Pattern--------->
+                        <br>
+                        <form>
+                           <fieldset id="fieldset_subscribe">
+                              <input type="text" name="email_enter" id="name" alt="entere mail" />
+                              <label for="name">Enter your e-mail address</label>
+                           </fieldset>
+                        </form>
+                        <a href="#" class="link_connected">Stay Connected</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="support">
+               <div class="container">
+                  <div class="row">
+                     <div id="support_content">
+                        <img src="img/hadleyicon.png" alt="hadley icon" id="hadley_icon">
+                        <h2>Your Support Matters</h2>
+                        <p>Hadley Institute for the Blind and Visually Impaired creates personalized learning opportunities that empower people to thrive — at home, at work and in their communities.</p>
+                     </div>
+                     <div id="footer_links">
+                        <a href="#"><img src="img/fb.png" alt="facebook icon" id="fb"></a>
+                        <a href="#"><img src="img/tw.png" alt="twitter icon" id="tw"></a>
+                        <a href="#"><img src="img/yt.png" alt="youtube icon" id="yt"></a>
+                        <a href="#"><img src="img/in.png" alt="linked in icon" id="li"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="rights_wrapper">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-8">
+                        <p id="copyright">© 2017 Hadley Institute For The Blind and Visullay Impaired. All Rights Reserved.</p>
+                     </div>
+                     <div class="col-sm-4">
+                        <a href="#" class="policy_term">Private Policy</a>
+                        <a href="#" class="policy_term">Terms of Service</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+
+      <script src="js/jquery.js"></script>
+   </body>
+</html>
